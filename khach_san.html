@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khách sạn</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/khach_san.css">
+
+</head>
+
+<body>
+    <div class="app">
+        <header id="header">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="row header-nav">
+                        <div class="icon-menu">
+                            <svg id="icon-svg" class="icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </div>
+
+
+                        <div class="logo col-sm-3 col-lg-2 col-md-3">
+                            <a class="navbar-brand" href="/">
+                                <img src="./images/Logo01.jpg">
+                            </a>
+                        </div>
+
+                        <div class="header-call-mobile">
+                            <p class="call-phone">
+                                0352.860.701
+                            </p>
+                        </div>
+                        <div id="navbar-overlay" class="navbar-overlay"></div>
+                        <div id="navbar-mobile" class="navbar-mobile">
+                            <svg id="navbar-moblie-close" aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="times" class="svg-inline--fa fa-times fa-w-11 navbar-moblie-close" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                                <path fill="currentColor"
+                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                </path>
+                            </svg>
+                            <ul class="navbar-list-moblie">
+                                <li>
+                                    <a href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li>
+                                    <a href="gioi_thieu.html">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a class="navbar-moblie-active" href="loai_khach_san.html">Đặt khách sạn</a>
+                                </li>
+                                <li>
+                                    <a href="lien_he.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="navbar col-sm-9 col-lg-7 col-md-9 col-xs-4">
+                            <ul class="navbar-list">
+                                <li>
+                                    <a href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li>
+                                    <a href="gioi_thieu.html">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a class="active" href="loai_khach_san.html">Đặt khách sạn</a>
+                                </li>
+                                <li>
+                                    <a href="lien_he.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="header-call-wrap col-sm-0 col-lg-3 col-md-0">
+                            <div class="header-call">
+                                <div class="call-icon ">
+                                    <img src="./images/call.gif">
+                                </div>
+                                <p class="call-phone">
+                                    0352.860.701
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="video">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <iframe class="video-iframe" width="100%" height="500"
+                            src="https://www.youtube.com/embed/NjMzLltNgjg" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-4 mb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-8">
+                        <div class="prd-title">
+                            <h2>
+                                <span>PHÒNG TRIPLE CÓ BAN CÔNG</span>
+                            </h2>
+                        </div>
+
+                        <div class="row prd-detail mt-3">
+                            <div class="col-md-7">
+                                <div id="image-overlay" class="image-overlay"></div>
+                                <div id="img-product-detail" class="img-product-detail">
+                                    <img id="img-product-zoom" src="images/Double-01.png" alt="">
+                                </div>
+                                <!-- <div class="img-prd-primary"> -->
+                                <div>
+                                    <img class="" id="featured" src="images/triple.jpg">
+                                </div>
+                                <div id="slide-wrapper">
+                                    <!-- <img id="slideLeft" class="arrow" src="images/img/arrow-left.png"> -->
+
+                                    <div id="slider">
+                                        <div class="thumbnail">
+                                            <img class="active-img" src="images/triple.jpg">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="images/img/preset2.jpg">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="images/img/preset3.jpg">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="images/img/preset4.jpg">
+                                        </div>
+                                    </div>
+
+                                    <!-- <img id="slideRight" class="arrow" src="images/img/arrow-right.png"> -->
+                                    <!-- </div> -->
+                                    <!-- <img src="images/triple.jpg" alt=""> -->
+                                </div>
+                            </div>
+
+                            <div class="col-md-5">
+                                <div>
+                                    <p>Với diện tích 32m2, phòng Triple City View có ban công là lựa chọn lý tưởng cho
+                                        kỳ nghỉ cùng cả gia đình hoặc nhóm bạn.</p>
+                                    <p>Với diện tích 32m2, phòng Triple City View có ban công là lựa chọn lý tưởng cho
+                                        kỳ nghỉ cùng cả gia đình hoặc nhóm bạn.</p>
+                                </div>
+                                <p class="prd_price">980.000đ</p>
+                                <button type="button" class="btn btn-primary buy" data-toggle="modal"
+                                    data-target="#exampleModal">
+                                    <svg class="buy-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                                    </svg>
+                                    Đặt phòng</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3 class="modal-title text-center w-100" id="exampleModalLabel">Đặt
+                                                    phòng</h3>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="mt-3" action="" method="POST" role="form">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="" name="fullname"
+                                                            placeholder="Họ và tên*">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <input type="number" class="form-control" id="" name="phone"
+                                                            placeholder="Số điện thoại*">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control" id="" name="number"
+                                                            placeholder="Email*">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <input type="text" onfocus="(this.type='date')"
+                                                            class="form-control" id="ngay_nhan" name="email"
+                                                            placeholder="Ngày nhận phòng*">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" onfocus="(this.type='date')"
+                                                            class="form-control" id="ngay_tra" name="email"
+                                                            placeholder="Ngày trả phòng*">
+                                                    </div>
+
+
+                                                    <div class="form-group">
+                                                        <input name="total_room" type="number" min="1" id="total_room"
+                                                            class="form-control"
+                                                            placeholder="Số phòng muốn đặt"></input>
+                                                    </div>
+                                                    <div class="info_price mt-3" id="info_price">
+
+                                                    </div>
+
+                                                    <div class="d-flex justify-content-between mt-3">
+                                                        <p class="total_price_title">Tổng tiền: </p>
+                                                        <p><span id="total_price" class="total_price">2500000
+                                                            </span><span class="total_price"> đ</span> </p>
+                                                        <!-- <input type="hidden" name="total_price"> -->
+                                                    </div>
+
+                                                    <button type="submit" class="btn btn-primary float-right">Đặt
+                                                        phòng</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br><br>
+                        <div class="row mt-4 mb-4">
+                            <div class="col-md-12 prd-info">
+                                <div class="prd-info-heading">
+                                    <h4 class="text-left prd-info-title">Thông tin chi tiết</h4>
+                                </div>
+
+                            </div>
+                            <div class="col-md-12">
+                                <div class="prd-info-detail mt-4">
+                                    <p>Số lượng: 08 phòng
+                                    </p>
+                                    <p>Diện tích: 32m2</p>
+                                    <p>Tiêu chuẩn: 3 khách</p>
+                                    <p>Loại giường: 1 giường đôi và 1 giường đơn</p>
+                                    <p>Bồn tắm: Đứng</p>
+                                    <p>Có ban công, view quảng trường Sonasea hoặc resort</p>
+                                    <p>Tất cả các phòng đều được trang bị đầy đủ: Tivi LCD * Máy điều hòa * Minibar với
+                                        đầy đủ các món ăn uống (tính phí) * Hệ thống nước nóng lạnh * Bàn & gương trang
+                                        điểm * Bàn ghế làm việc * Bàn ghế sofa trong phòng * Két sắt cá nhân * Máy sấy
+                                        tóc * Ấm siêu tốc * Dép đi trong phòng * Mỹ phẩm phòng tắm theo tiêu chuẩn</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 prd-info">
+                                <div class="prd-info-heading mb-4">
+                                    <h4 class="text-left prd-info-title">Bình luận</h4>
+                                </div>
+
+                                <!-- <div class="no-comment">
+                                    <p>Chưa có bình luận nào!</p>
+                                </div> -->
+
+                                <div class="prd-content-wrap">
+                                    <div class="prd-comment">
+                                        <div class="prd-comment-avt">
+                                            <img src="./images/avatar_comment.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="user-name">Nguyễn Quang Chiến</p>
+                                            <p class="comment-date">5 ngày trước</p>
+                                            <div class="stars stars-completed">
+                                                <a class="star-5" href="">5</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="prd-comment-content">
+                                        <p>Khách sạn Mường Thanh Luxury đẹp, rộng rãi, sạch sẽ, ấn tượng bởi thảm ở các
+                                            tầng từ sảnh đến phòng rất dầy, đi rất êm chân, đồ trong phòng mới, tiện
+                                            nghi, có bồn tắm. Nhân viên chuyên nghiệp, dịch vụ phòng tốt. Đồ ăn buffet
+                                            sáng chưa chuyên như các khách sạn 5 sao ở Hà Nội.</p>
+                                    </div>
+                                </div>
+
+                                <div class="prd-content-wrap">
+                                    <div class="prd-comment">
+                                        <div class="prd-comment-avt">
+                                            <img src="./images/avatar_comment.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="user-name">Trần Thị Linh</p>
+                                            <p class="comment-date">2 ngày trước</p>
+                                            <div class="stars stars-completed">
+                                                <a class="star-5" href="">5</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="prd-comment-content">
+                                        <p>Phòng sạch sẽ.
+                                            Lễ tân và phục vụ chu đáo.
+                                            Vị trí trung tâm, gần các điểm tham quan vui chơi.
+                                            Buffe sáng ngon miệng. Tuy không đặc biệt phong phú nhưng ngon.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="form-comment">
+                                    <form action="">
+                                        <h5 class="mb-3">Đánh giá của bạn về phòng: PHÒNG TRIPLE CÓ BAN CÔNG tại MORRIS
+                                            HOTEL PHÚ QUỐC</h5>
+
+                                        <p class="stars">Đánh giá của bạn: <br>
+                                            <a class="star-1" href="#">1</a>
+                                            <a class="star-2" href="#">2</a>
+                                            <a class="star-3" href="#">3</a>
+                                            <a class="star-4" href="#">4</a>
+                                            <a class="star-5" href="#">5</a>
+                                        </p>
+
+                                        <input type="hidden" id="star" name="star" value="">
+
+                                        <div class="form-group">
+                                            <label for="">Họ và tên*: </label>
+                                            <input type="text" class="form-control" id="" name="fullname">
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="">Nội dung*: </label>
+                                            <textarea name="content" id="" class="form-control" rows="4"></textarea>
+                                        </div>
+
+
+
+                                        <button type="submit" class="btn btn-primary">Gửi đánh giá</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <div class="prd-title">
+                                    <h2>
+                                        <span>Sản phẩm cùng mục</span>
+                                    </h2>
+                                </div>
+
+                                <div class="prd-list mt-2">
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-4 mb-30px">
+                                            <a href="#">
+                                                <div class="prd-item text-center">
+                                                    <div class="prd-img">
+                                                        <img src="./images/morris-hotel-phuquoc-loai-1.png" alt="">
+                                                    </div>
+                                                    <h2 class="mt-4 mb-2">Phòng Family có ban công</h2>
+                                                    <span>1.250.000đ</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-30px">
+                                            <a href="#">
+                                                <div class="prd-item text-center">
+                                                    <div class="prd-img">
+                                                        <img src="./images/triple.jpg" alt="">
+                                                    </div>
+                                                    <h2 class="mt-4 mb-2">Phòng Family có ban công</h2>
+                                                    <span>3.000.000đ</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-30px">
+                                            <a href="#">
+                                                <div class="prd-item text-center">
+                                                    <div class="prd-img">
+                                                        <img src="./images/deluxe.png" alt="">
+                                                    </div>
+                                                    <h2 class="mt-4 mb-2">Phòng Family có ban công</h2>
+                                                    <span>2.000.000đ</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-30px">
+                                            <a href="#">
+                                                <div class="prd-item text-center">
+                                                    <div class="prd-img">
+                                                        <img src="./images/superior.jpg" alt="">
+                                                    </div>
+                                                    <h2 class="mt-4 mb-2">Phòng Family có ban công</h2>
+                                                    <span>2.550.000đ</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 contact">
+                        <div class="slibar-contact">
+                            <h2>
+                                <span>Thông tin liên hệ</span>
+                            </h2>
+                        </div>
+                        <div class="contact-content">
+                            <h4>MORRIS HOTEL PHÚ QUỐC</h4>
+                            <p><b>Địa chỉ: </b> S05-SS03, THDL Sonasea Villas, & Resort, tổ 5 ấp Đường Bào, Xã Dương Tơ,
+                                Huyện Phú Quốc, Tỉnh Kiên Giang</p>
+                            <p><b>Số điện thoại: </b> 0352.860.701 <br> 0971.884.221</p>
+                            <p><b>Email: </b> sales@morrishotel.vn</p>
+                            <p><b>Website: </b> sales@morrishotel.vn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-top pt-4 pb-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <h3 class="mb-4">Liên hệ</h3>
+                            <div class="fz-15px">
+                                <p>KHÁCH SẠN MORRIS PHÚ QUỐC </p>
+                                <p>Địa chỉ : S05-SS03, THDL Sonasea Villas, & Resort, tổ 5 ấp Đường Bào, Xã Dương Tơ,
+                                    Huyện Phú Quốc, Tỉnh Kiên Giang</p>
+                                <p>Tel : +84-297 626 1888; +84-297 265 0555</p>
+                                <p>Hotline: 083-495-6624 (Mr. Sang); 077-2595-777 (Ms. Trang).</p>
+                                <p> Email : sales@morrishotel.vn</p>
+                                <p>Website: www.morrishotel.vn</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 self col-sm-6 mb-4">
+                            <h3 class="mb-4">Về chúng tôi</h3>
+                            <div class="fz-15px">
+                                <p><svg style="width: 12px; height: 12px; margin-right: 4px" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
+                                    </svg><a href="#">Giới thiệu</a> </p>
+                                <p><svg style="width: 12px; height: 12px; margin-right: 4px" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
+                                    </svg><a href="#">Loại phòng</a> </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <h3 class="mb-4">Bản đồ</h3>
+                            <div>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5012100916056!2d106.64830471480079!3d10.772871692323966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaf3d5faceae5b597!2zVGhp4bq_dCBr4bq_IHdlYnNpdGUgTWluaCBUaHXhuq1u!5e0!3m2!1svi!2s!4v1517479498123"
+                                    allowfullscreen="allowfullscreen" width="100%" height="250"
+                                    frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>©morrishotel.vn | Design by CTĐ</span>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/navbar-toggle.js"></script>
+    <script src="./js/buy-product.js"></script>
+    <script src="./js/star-active.js"></script>
+    <script src="./js/image-zoom.js"></script>
+</body>
+
+</html>
